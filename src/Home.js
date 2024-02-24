@@ -6,6 +6,7 @@ import Product from './components/Product'
 import Button from './components/Button'
 
 import TextCarousel from './components/Textcarousel'
+import Category from './Category'
 
 
 const Home = () => {
@@ -17,6 +18,7 @@ const Home = () => {
       <Product />
       {/* <CarouselImg /> */}
       <TextCarousel />
+      <Category />
 
       <Button />
     </>
