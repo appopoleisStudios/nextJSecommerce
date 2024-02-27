@@ -3,10 +3,13 @@ import Navbar from './components/Navbar'
 import Gallery from './components/Gallery'
 import Product from './components/Product'
 
-import Button from './components/Button'
+
 
 import TextCarousel from './components/Textcarousel'
 import Category from './Category'
+import Timing from './components/Timing'
+import Fax from './components/Fax'
+import Footer from './components/Footer'
 
 
 const Home = () => {
@@ -19,8 +22,11 @@ const Home = () => {
       {/* <CarouselImg /> */}
       <TextCarousel />
       <Category />
+      <Timing />
+      <Fax />
+      <Footer />
 
-      <Button />
+
     </>
   )
 }

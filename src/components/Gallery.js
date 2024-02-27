@@ -7,18 +7,18 @@ const Gallery = () => {
     <>
 
       <section className='flex flex-col lg:flex-row '>
-        <div className='relative   w-full lg:w-1/2 h-screen  flex  p-2 flex-col justify-center ' style={{ backgroundColor: "#FAE3D9" }}>
+        <div className='relative w-full lg:w-1/2 h-screen flex p-2 flex-col justify-center' style={{ backgroundColor: "#FAE3D9" }}>
           <div className='flex flex-col justify-center'>
-            <h1 className='text-4xl font-bold' style={{ fontFamily: "serif", }}>Women’s fashion</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing el</p>
+            <h1 className='text-3xl lg:text-4xl font-bold' style={{ fontFamily: "serif" }}>Women’s fashion</h1>
+            <p className="text-sm lg:text-base">Lorem ipsum dolor sit amet, consectetur adipisicing el</p>
             <a href="#" className="text-black font-semibold hover:underline mt-4" style={{ textDecoration: 'underline', color: 'darkred' }}>Shop Now</a>
-
           </div>
 
-          <div className='absolute bottom-0 right-0  h-full '>
-            <img src='./images/first1.png' className='h-full' />
+          <div className='absolute bottom-0 right-0 h-3/5 lg:h-full '>
+            <img src='./images/first1.png' className='h-full' alt="Women's Fashion" />
           </div>
         </div>
+
 
         <div className=' w-full lg:w-1/2 h-auto lg:h-screen flex flex-col justify-between '>
 

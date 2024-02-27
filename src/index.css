@@ -3,12 +3,10 @@
 @tailwind utilities;
 
 .carousel-radio:checked {
-  /* Style for checked state */
-  background-color: #1f2937; /* Tailwind's gray-800 */
+  background-color: #1f2937;
 }
 
 .carousel-radio {
-  /* Radio button styles */
   appearance: none;
   margin: 0 2px;
   width: 10px;
@@ -44,7 +42,6 @@ slick-slide {
   z-index: 1;
 }
 
-/* You may need to adjust the positioning of the arrows */
 .slick-prev {
   left: -35px;
 }
@@ -53,7 +50,6 @@ slick-slide {
   right: -35px;
 }
 
-/* index.css or tailwind.css */
 @media (min-width: 1024px) {
   .carousel-container {
     display: grid;

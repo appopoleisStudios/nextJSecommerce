@@ -1,71 +1,107 @@
-import React, { useState } from 'react'
-
-
+import React, { useState } from 'react';
+import Productinfo from './Productinfo';
+import { Link } from 'react-router-dom';
 
 
 
 const Navbar = () => {
-
-  let Links = [
-    { name: "Home", link: "/" },
-    { name: "service", link: "/" },
-    { name: "About", link: "/" },
-    { name: "Blog", link: "/" },
-    { name: "Conatct", link: "/" },
+  const links = [
+    // { name: "Home", link: "/" },
+    // { name: "Service", link: "/" },
+    // { name: "About", link: "/" },
+    // { name: "Blog", link: "/" },
+    // { name: "Contact", link: "/" },
   ];
 
-  let [open, setOpen] = useState(false)
-
-
-
+  const [open, setOpen] = useState(false);
 
   return (
-    <>
-      <div className='shadow-md w-full  top-0 left-0 '>
-        <div className='md:flex items-center justify-between bg-white p-4'>
-          <div className='font-bold text-2x1 cursor-pointer flex items-center font-[Poppins] text-gray-800'>
-            <span className='text-3xl text-indigo-600 mr-1 pt-2'></span>
-            <img src="/images/appo.jpg" alt="not found"
-              className="w-48 h-30 "
-            />
-          </div>
-          <div onClick={() => setOpen(!open)} className='.
-         absolute right-8 top-6 cursor-pointer md:hidden ' style={{ fontSize: '38px' }}>
-            <ion-icon name={open ? 'close' : 'menu'}></ion-icon>
-          </div>
-
-          <ul className={`md:flex md:items-center md:pb-0 pb-12 absolute md:static bg-white md:z-auto z-[-1]
-        left-0 w-full md:w-auto md:pl-0 pl-9 transition-all duration-500 ease-in ${open ? 'top-20 opacity-100' : 'top-[-490px]'} md:opacity-100 opacity-0`}>
-            {
-              Links.map((link) => (
-                <li key={link.name} className='md:ml-8 text-xl md:my-0 my-7'>
-                  <a href={link.link} className='text-gray-800 hover:text-gray-400 duration-500'>{link.name}</a>
-                </li>
-              ))
-            }
-
+    <nav className="bg-white border-gray-200 dark:bg-gray-900">
+      <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+        <Link to="/" className="flex items-center space-x-3 rtl:space-x-reverse">
+          <img src="./images/appo.jpg" className="h-11" alt="appo Logo" />
+        </Link>
+        <div className="flex items-center md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
+          <button
+            type="button"
+            className="flex text-sm bg-gray-800 rounded-full md:me-0 focus:ring-4 focus:ring-gray-300 dark:focus:ring-gray-600 md:hidden"
+            id="user-menu-button"
+            aria-expanded={open}
+            onClick={() => setOpen(!open)}
+          >
+          </button>
+          <ul className='flex space-x-4
+          '>
+            <li>
+              <a href="/login" className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Login</a>
+            </li>
+            <li>
+              <a href="/register" className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Register</a>
+            </li>
           </ul>
 
-          <div>
-            <div className="flex space-x-4 items-center">
-              <ul className="flex gap-4">
-                <li><a href="/login" className="text-blue-500 hover:text-blue-700">Login</a></li>
-                <li><a href="/register" className="text-blue-500 hover:text-blue-700">Register</a></li>
-              </ul>
-              <ion-icon name="heart" className="text-xl"></ion-icon>
-              <ion-icon name="card" className="text-xl"></ion-icon>
-              <ion-icon name="search" className="text-xl"></ion-icon>
-            </div>
-          </div>
-
+          <button
+            type="button"
+            className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+            aria-controls="navbar-user"
+            aria-expanded={open}
+            onClick={() => setOpen(!open)}
+          >
+            <span className="sr-only">Open main menu</span>
+            <svg
+              className="w-5 h-5"
+              viewBox="0 0 17 14"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M1 1h15M1 7h15M1 13h15" />
+            </svg>
+          </button>
         </div>
+        <div
+          className={`items-center justify-between w-full md:flex md:w-auto md:order-1 ${open ? 'block' : 'hidden'}`}
+          id="navbar-user"
+        >
+          <ul className="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+            <li>
+              <Link to="/" className="block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500" aria-current="page">Home</Link>
+            </li>
+            <li>
+              <a href="#" className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">WOMEN’S
+              </a>
+            </li>
+            <li>
+              <a href="#" className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">MEN’S
+              </a>
+            </li>
+            <li>
+              <a href="#" className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">
+                SHOP
+              </a>
+            </li>
+            <li>
+              <Link to={'/productInfo'} className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">PRODUCT
+              </Link>
+            </li>
+            <li>
+              <a href="#" className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">BLOG
 
-
-
+              </a>
+            </li>
+            <li>
+              <a href="#" className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">CONTACT
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
-    </>
-
-  )
+    </nav>
+  );
 }
 
-export default Navbar
+export default Navbar;
+
+
+
+
+
