@@ -10,7 +10,7 @@ const Productinfo = () => {
         <div class="container px-5 py-24 mx-auto">
           <div class="lg:w-4/5 mx-auto flex flex-wrap">
             <div class="lg:w-1/2 w-full lg:pr-10 lg:py-6 mb-6 lg:mb-0">
-              <h2 class="text-sm title-font text-gray-500 tracking-widest">BRAND NAME</h2>
+              <h2 class="text-sm title-font text-gray-500 tracking-widest">Appopoleis</h2>
               <h1 class="text-gray-900 text-3xl title-font font-medium mb-4">Animated Night Hill Illustrations</h1>
               <div class="flex mb-4">
                 <a class="flex-grow text-indigo-500 border-b-2 border-indigo-500 py-2 text-lg px-1">Description</a>
@@ -54,7 +54,7 @@ const Productinfo = () => {
           <div class="flex flex-wrap -m-4">
             <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
               <a class="block relative h-48 rounded overflow-hidden">
-                <img alt="ecommerce" class="object-cover object-center w-full h-full block " src="images/eco1.jpg" />
+                <img alt="ecommerce" class="object-contain object-center w-full h-full block " src="images/eco1.jpg" />
               </a>
               <div class="mt-4">
                 <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">CATEGORY</h3>
@@ -64,7 +64,7 @@ const Productinfo = () => {
             </div>
             <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
               <a class="block relative h-48 rounded overflow-hidden">
-                <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="images/eco2.jpg" />
+                <img alt="ecommerce" class="object-contain object-center w-full h-full block" src="images/eco2.jpg" />
               </a>
               <div class="mt-4">
                 <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">CATEGORY</h3>
@@ -74,7 +74,7 @@ const Productinfo = () => {
             </div>
             <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
               <a class="block relative h-48 rounded overflow-hidden">
-                <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="images/eco3.jpg" />
+                <img alt="ecommerce" class="object-contain object-center w-full h-full block" src="images/eco3.jpg" />
               </a>
               <div class="mt-4">
                 <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">CATEGORY</h3>
@@ -84,7 +84,7 @@ const Productinfo = () => {
             </div>
             <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
               <a class="block relative h-48 rounded overflow-hidden">
-                <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="/images/eco4.jpg" />
+                <img alt="ecommerce" class="object-contain object-center w-full h-full block" src="/images/eco4.jpg" />
               </a>
               <div class="mt-4">
                 <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">CATEGORY</h3>

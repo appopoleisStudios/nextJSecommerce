@@ -58,7 +58,7 @@ const Product = () => {
             <div className="flex flex-wrap justify-center md:justify-start m-4"> {/* Centering in small screens and starting from the left in medium and larger screens */}
               <div className="p-4 lg:w-1/4 md:w-1/2">
                 <div className="h-full flex flex-col items-center text-center">
-                  <img alt="team" className="flex-shrink-0 rounded-lg w-56 h-96 object-cover object-center mb-4" src="images/product1.jpg" />
+                  <img alt="team" className="flex-shrink-0 rounded-lg w-56 h-96 object-cover object-center mb-4" src="images/for2.jpg" />
                   <div className="w-full">
                     <h2 className="title-font font-medium text-lg text-gray-900">Buttons tweed blazer</h2>
                     <h3 className="text-gray-500 mb-3">
@@ -75,7 +75,7 @@ const Product = () => {
 
               <div class="p-4 lg:w-1/4 md:w-1/2">
                 <div class="h-full flex flex-col items-center text-center">
-                  <img alt="team" class="flex-shrink-0 rounded-lg w-56 h-96  object-cover object-center mb-4" src="images/product3.jpg" />
+                  <img alt="team" class="flex-shrink-0 rounded-lg w-56 h-96  object-cover object-center mb-4" src="images/for3.jpg" />
                   <div class="w-full">
                     <h2 class="title-font font-medium text-lg text-gray-900">Flowy striped skirt</h2>
                     <h3 className="text-gray-500 mb-3">
@@ -92,7 +92,7 @@ const Product = () => {
 
               <div class="p-4 lg:w-1/4 md:w-1/2">
                 <div class="h-full flex flex-col items-center text-center">
-                  <img alt="team" class="flex-shrink-0 rounded-lg w-56 h-96  object-cover object-center mb-4" src="images/product2.jpg" />
+                  <img alt="team" class="flex-shrink-0 rounded-lg w-56 h-96  object-cover object-center mb-4" src="images/for4.jpg" />
                   <div class="w-full">
                     <h2 class="title-font font-medium text-lg text-gray-900">Cotton T-Shirt</h2>
                     <h3 className="text-gray-500 mb-3">
@@ -110,7 +110,7 @@ const Product = () => {
 
               <div class="p-4 lg:w-1/4 md:w-1/2">
                 <div class="h-full flex flex-col items-center text-center">
-                  <img alt="team" class="flex-shrink-0 rounded-lg w-56 h-96  object-cover object-center mb-4" src="images/product4.jpg" />
+                  <img alt="team" class="flex-shrink-0 rounded-lg w-56 h-96  object-cover object-center mb-4" src="images/for5.jpg" />
                   <div class="w-full">
                     <h2 class="title-font font-medium text-lg text-gray-900">Fit micro corduroy shirt</h2>
                     <h3 className="text-gray-500 mb-3">
@@ -128,7 +128,7 @@ const Product = () => {
 
               <div class="p-4 lg:w-1/4 md:w-1/2">
                 <div class="h-full flex flex-col items-center text-center">
-                  <img alt="team" class="flex-shrink-0 rounded-lg w-56 h-96  object-cover object-center mb-4" src="images/product5.jpg" />
+                  <img alt="team" class="flex-shrink-0 rounded-lg w-56 h-96  object-cover object-center mb-4" src="images/for6.jpg" />
                   <div class="w-full">
                     <h2 class="title-font font-medium text-lg text-gray-900">Tropical Kimono</h2>
                     <h3 className="text-gray-500 mb-3">
@@ -146,7 +146,7 @@ const Product = () => {
 
               <div class="p-4 lg:w-1/4 md:w-1/2">
                 <div class="h-full flex flex-col items-center text-center">
-                  <img alt="team" class="flex-shrink-0 rounded-lg w-56 h-96  object-cover object-center mb-4" src="images/product7.jpg" />
+                  <img alt="team" class="flex-shrink-0 rounded-lg w-56 h-96  object-cover object-center mb-4" src="images/for7.jpg" />
                   <div class="w-full">
                     <h2 class="title-font font-medium text-lg text-gray-900">Contrasting sunglasses</h2>
                     <h3 className="text-gray-500 mb-3">
@@ -164,7 +164,7 @@ const Product = () => {
 
               <div class="p-4 lg:w-1/4 md:w-1/2">
                 <div class="h-full flex flex-col items-center text-center">
-                  <img alt="team" class="flex-shrink-0 rounded-lg w-56 h-96  object-cover object-center mb-4" src="images/product6.jpg" />
+                  <img alt="team" class="flex-shrink-0 rounded-lg w-56 h-96  object-cover object-center mb-4" src="images/for8.jpg" />
                   <div class="w-full">
                     <h2 class="title-font font-medium text-lg text-gray-900">Slim striped pocket shirt</h2>
                     <h3 className="text-gray-500 mb-3">
@@ -183,7 +183,7 @@ const Product = () => {
 
               <div class="p-4 lg:w-1/4 md:w-1/2">
                 <div class="h-full flex flex-col items-center text-center">
-                  <img alt="team" class="flex-shrink-0 rounded-lg w-56 h-96  object-cover object-center mb-4" src="images/product8.jpg" />
+                  <img alt="team" class="flex-shrink-0 rounded-lg w-56 h-96  object-cover object-center mb-4" src="images/for1.jpg" />
                   <div class="w-full">
                     <h2 class="title-font font-medium text-lg text-gray-900">Water resistant backpack</h2>
                     <h3 className="text-gray-500 mb-3">
